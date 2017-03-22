@@ -1,0 +1,19 @@
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.sahajarora.socialnetwork.MainActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.ChosenUsersActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.AllUsersActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.UserProfileActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.FollowersActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.FollowingActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.DocumentsLikedActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.DocumentProfileActivity { <init>(); }
+-keep class com.sahajarora.socialnetwork.ViewTasteActivity { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

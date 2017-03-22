@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.sahajarora.socialnetwork.ChosenUsersActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text = "Users Chosen for Simulation:"
+        android:layout_marginBottom="15sp"/>
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="193dp"
+        android:id="@+id/listUsersChosen"
+        android:layout_weight="0.40"
+        android:background="#f0d5a7"></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "View All Users"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/btnViewAllUsers"
+        android:onClick="displayAllUsers"
+        />
+
+</LinearLayout>
+<!-- From: file:/E:/SYSC%203110/SocialNetwork/app/src/main/res/layout/activity_chosen_users.xml -->

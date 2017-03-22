@@ -1,0 +1,62 @@
+-injars 'E:\SYSC 3110\SocialNetwork\app\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'E:\SYSC 3110\SocialNetwork\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'D:\Softwares\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\build-tools\23.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'E:\SYSC 3110\SocialNetwork\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.sahajarora.socialnetwork.MainActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.ChosenUsersActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.AllUsersActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.UserProfileActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.FollowersActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.FollowingActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.DocumentsLikedActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.DocumentProfileActivity {
+    <init>();
+}
+
+-keep class com.sahajarora.socialnetwork.ViewTasteActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

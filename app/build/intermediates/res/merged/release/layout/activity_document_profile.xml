@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation = "vertical"
+    tools:context="com.sahajarora.socialnetwork.DocumentProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+             android:layout_width="100sp"
+             android:layout_height="100sp"
+            android:id="@+id/imageView2"
+             android:src="@drawable/document"/>
+
+        <TextView
+            android:layout_marginTop="35sp"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text = "Document"
+            android:id="@+id/tvDocName"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="Tag: "
+        android:textSize="25sp"
+        android:id="@+id/tvDocumentTag"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Producer: "
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"
+        android:id="@+id/tvDocumentProducer"
+        android:layout_marginBottom="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text = "Likers: "
+        android:id="@+id/tvLikers"
+        android:layout_marginBottom="10sp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listLikers"
+        android:background="#97ecde">
+    </ListView>
+
+</LinearLayout>
+<!-- From: file:/E:/SYSC%203110/SocialNetwork/app/src/main/res/layout/activity_document_profile.xml -->

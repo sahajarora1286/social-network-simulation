@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sahajarora.socialnetwork"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.sahajarora.socialnetwork.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sahajarora.socialnetwork.ChosenUsersActivity" >
+        </activity>
+        <activity android:name="com.sahajarora.socialnetwork.AllUsersActivity" >
+        </activity>
+        <activity android:name="com.sahajarora.socialnetwork.UserProfileActivity" >
+        </activity>
+        <activity
+            android:name="com.sahajarora.socialnetwork.FollowersActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sahajarora.socialnetwork.FollowingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sahajarora.socialnetwork.DocumentsLikedActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.sahajarora.socialnetwork.DocumentProfileActivity" >
+        </activity>
+        <activity android:name="com.sahajarora.socialnetwork.ViewTasteActivity" >
+        </activity>
+    </application>
+
+</manifest>
